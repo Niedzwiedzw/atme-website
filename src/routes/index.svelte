@@ -4,7 +4,7 @@
 
 	const nextRandomPhoto = (): string => images[parseInt(`${Math.random() * (images.length - 1)}`)];
   let currentPhotoIndex = 0;
-  $: currentPhoto = images[currentPhotoIndex];
+  $: currentPhoto = `/images/${images[currentPhotoIndex]}`;
   const rotatePhoto = () => {
     currentPhotoIndex = (currentPhotoIndex + 1) % (images.length)
   };
