@@ -61,7 +61,7 @@
     <meta name="theme-color" content="#000000">
 
 	  {#each images as image (image)}
-		    <link rel="prefetch" href={image}/>
+		    <img src={`/images/${image}`} style="width: 1px; height: 1px; position: absolute; top: -10px; left: -10px;" />
 	  {/each}
 
 </svelte:head>
